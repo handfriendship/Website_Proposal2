@@ -1,0 +1,183 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>HTML Email Template</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,600,600i&display=swap" rel="stylesheet"/>
+</head>
+<style>
+  .void {text-decoration: none;color:black; cursor:pointer;}
+  .void:link {text-decoration: none;}
+  .void:visited {text-decoration: none;}
+  .void:hover {text-decoration: none;}
+  .montserrat {font-family:'Montserrat', sans-serif;} .roboto {font-family:'Roboto', sans-serif;}
+  body {margin:0;} td {padding:0 10px;}
+
+  .img-outer-wrapper {display:flex;flex-flow:row wrap;justify-content:center;align-items:center;}
+  .img-wrapper {padding:calc(3% + 10px) 0;margin:0 2%;}
+  .logo-table {width:425px;} .title-table {width:100%;}
+
+  .title-section td {height:290px;background:url('../imgs/bg.png');background-position:0 0;}
+  .main-title {color:#fff;font-weight:600;margin:0;margin-bottom:15px;font-size:32px;}
+  .sub-title {color:#fff;font-weight:normal;margin:0;font-size:16px;}
+
+  .web-pic-wrapper {width:86%;text-align:center;}
+  .web-pic-wrapper img {width:100%;margin-top:calc(6% + 10px);}
+
+  .issue-title {display:table;margin:calc(3% + 10px) auto;}
+  .issues {display:table;margin:auto;margin-bottom:calc(4% + 10px);}
+  .issues li {font-size:16px;color:#222;}
+  .solution-section {background-color:#465ced;}
+  .solution-title {font-size:30px;font-weight:600;color:#fff;margin:40px 0;}
+  .copyright .void {text-decoration:underline;}
+  .info-area-wrap {width:585px;}
+  .info-area {display:flex;flex-flow:row wrap;justify-content:center;align-items:center;}
+  .span-wrap {flex:1 1 0;padding-top:20px;}
+  .icon-area {margin-bottom:10px;}
+  .icon-wrap {position:relative;width:75px;height:0;padding-bottom:39%;}
+  .icon-inner-wrap {position:absolute;top:0;left:0;width:100%;height:100%;font-size:30px;color:#465ced;
+    border-radius:100%;background-color:#fff;display:flex;justify-content:center;align-items:center;}
+  .info-area {color:#fff;font-size:14px;font-weight:600;}
+  .btn-area {padding:60px 0;}
+  .btn-area button {border-radius:9px;background-color:#fff;padding:15px 45px;
+    color:#000;font-size:18px;border:none;}
+  .footer {text-align:center;}
+  .copyright-area {padding-top:35px;}
+  .copyright, .copyright .void {font-size:12px;font-weight:300;color:#222;}
+  .xen-link-section {display:flex;justify-content:space-between;width:275px;margin:20px auto;}
+  .xen-link-section span {font-size:18px;font-weight:600;color:#222;}
+  .xen-copy {font-size:12px;font-weight:300;padding-bottom:30px;font-style:italic;}
+  @media all and (max-width:600px){
+    .solution-title {margin:20px 0;font-size:22px;}
+    .info-area-wrap {width:auto;}
+    .info-area {width:200px;}
+    .span-wrap {padding-top:10%;}
+  }
+  @media all and (max-width:425px) {
+    .logo-table {width:320px;}
+    .img-wrapper:nth-child(1) {width:95px;}
+    .img-wrapper:nth-child(2) {width:42px;}
+    .img-wrapper:nth-child(3) {width:108px;}
+    .img-wrapper img {width:100%;}
+    .btn-area {padding:30px 0;}
+  }
+</style>
+
+<body>
+  <table class="logo-table" align="center" cellpadding="0" cellspacing="0">
+    <tr class="header" align="center">
+      <td class="img-outer-wrapper">
+       <div class="img-wrapper"><img src="./imgs/serrano.png" /></div>
+       <div class="img-wrapper"><img src="./imgs/handshake.png" /></div>
+       <div class="img-wrapper"><img src="./imgs/xen-logo.png" /></div>
+      </td>
+    </tr>
+  </table>
+  <table class="title-table" align="center" cellpadding="0" cellspacing="0">
+    <tr class="title-section" align="center">
+      <td>
+        <h3 class="main-title montserrat">Big ideas, creative people, new technology</h3>
+        <h6 class="sub-title roboto">Xen specializes in developing high quality web sites at the most affordable prices </h6>
+      </td>
+    </tr>
+  </table>
+  <table align="center" cellpadding="0" cellspacing="0">
+    <tr class="web-pic-section" height="0">
+      <td class="web-pic-wrapper" cellpadding="0">
+         <img src="./imgs/website.png" />
+      </td>
+    </tr>
+    <tr class="web-issue-section" height="0">
+      <td>
+        <h2 class="issue-title montserrat">Your website currently has these issue...</h2>
+         <ol class="issues">
+           <li class="roboto"> The design and features are not up to date. </li>
+           <li class="roboto"> It’s not optimized for mobile devices. </li>
+           <li class="roboto"> Page loading takes forever and some links don’t work. </li>
+           <li class="roboto"> People, and Google, have trouble finding your website. </li>
+           <li class="roboto"> Has a high chance of getting hacked. </li>
+         </ol>
+      </td>
+    </tr>
+  </table>
+  <table class="title-table" align="center" cellpadding="0" cellspacing="0">
+    <tr class="solution-section" height="0" align="center">
+      <td>
+         <h1 class="solution-title montserrat">No worries, we can fix it.<br /> Because, these are what we do :)</h1>
+         <div class="info-area-wrap">
+           <div class="info-area">
+              <div class="span-wrap">
+                <span class="inner-span">
+                  <div class="icon-area">
+                    <div class="icon-wrap">
+                      <div class="icon-inner-wrap">
+                        <i class="fas fa-laptop-code"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="info-area montserrat">
+                    Web/App Development
+                  </div>
+                </span>
+              </div>
+              <div class="span-wrap">
+                <span class="inner-span">
+                  <div class="icon-area">
+                    <div class="icon-wrap">
+                      <div class="icon-inner-wrap">
+                        <i class="fas fa-search"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="info-area montserrat">
+                    SEO
+                  </div>
+                </span>
+              </div>
+              <div class="span-wrap">
+                <span class="inner-span">
+                  <div class="icon-area">
+                    <div class="icon-wrap">
+                      <div class="icon-inner-wrap">
+                        <i class="fas fa-tags fa-flip-horizontal"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="info-area montserrat">
+                    e-commerce
+                  </div>
+                </span>
+              </div>
+           </div>
+         </div>
+         <div class="btn-area">
+           <button class=" montserrat">SEE PROPOSAL</button>
+         </div>
+      </td>
+    </tr>
+  </table>
+  <table align="center" cellpadding="0" cellspacing="0">
+    <tr class="footer roboto" height="0">
+      <td>
+        <div class="copyright-area">
+           <span class="copyright">
+              Xen Media<br />
+              <a class="void" href="http://xenmedia.net/">www.xenmedia.net</a><br />
+              (213) 384-6153<br />
+              3701 Wilshire Blvd. Ste 414, Los Angeles, CA 90010<br />
+           </span>
+         </div>
+         <div class="xen-link-section">
+           <a class="void" href="http://xenmedia.net/about">ABOUT US</a>
+           <a class="void" href="http://xenmedia.net/work">PORTFOLIO</a>
+         </div>
+         <span class="xen-copy">Copyright XenMedia, All rights reserved.</span>
+      </td>
+    </tr>
+  </table>
+  <script src="https://kit.fontawesome.com/8b84eadd8c.js" crossorigin="anonymous"></script>
+</body>
+</html>
